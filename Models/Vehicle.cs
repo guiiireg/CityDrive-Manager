@@ -18,6 +18,10 @@ namespace CityDriveManager.Models
             CurrentSpeed = Math.Max(0, CurrentSpeed - 10);
         }
 
+        public abstract string GetVehicleType();
+
+        public abstract string GetDetailedStatus();
+
         public override string ToString()
         {
             return $"Brand: {Brand}\nColor: {Color}\nCurrent speed: {CurrentSpeed} km/h";

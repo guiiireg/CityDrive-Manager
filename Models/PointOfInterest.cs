@@ -15,8 +15,12 @@ namespace CityDriveManager.Models
 
         public double CalculateDistance(PointOfInterest other)
         {
-            double distanceInDegrees = Math.Sqrt(Math.Pow(other.Latitude - Latitude, 2) + Math.Pow(other.Longitude - Longitude, 2));
-            return distanceInDegrees * 111;
+            return DistanceCalculator.Haversine(Latitude, Longitude, other.Latitude, other.Longitude);
+        }
+
+        public double CalculateSimplifiedDistance(PointOfInterest other)
+        {
+            return DistanceCalculator.Euclidean(Latitude, Longitude, other.Latitude, other.Longitude);
         }
 
         public override string ToString()
