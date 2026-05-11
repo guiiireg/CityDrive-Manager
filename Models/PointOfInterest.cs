@@ -10,7 +10,7 @@ namespace CityDriveManager.Models
 
         public string GetGoogleMapsUrl()
         {
-            return $"https://www.google.com/maps?q=latitude,{Longitude}";
+            return $"https://www.google.com/maps?q={Latitude},{Longitude}";
         }
 
         public double CalculateDistance(PointOfInterest other)
