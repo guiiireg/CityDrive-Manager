@@ -6,9 +6,17 @@ namespace CityDriveManager.Models
     {
         public const double AVERAGE_SPEED = 50;
 
-        public Vehicle Vehicle { get; set; }
-        public PointOfInterest StartPoint { get; set; }
-        public PointOfInterest EndPoint { get; set; }
+        public int Id { get; set; }
+
+        public int VehicleId { get; set; }
+        public Vehicle Vehicle { get; set; } = null!;
+
+        public int StartPointId { get; set; }
+        public PointOfInterest StartPoint { get; set; } = null!;
+
+        public int EndPointId { get; set; }
+        public PointOfInterest EndPoint { get; set; } = null!;
+
         public DateTime DepartureDate { get; set; }
         public TrafficState Traffic { get; set; } = TrafficState.Fluid;
 

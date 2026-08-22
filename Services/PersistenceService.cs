@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,9 +27,9 @@ namespace CityDriveManager.Services
 
         private class VehicleDto
         {
-            public string Type { get; set; }
-            public string Brand { get; set; }
-            public string Color { get; set; }
+            public string Type { get; set; } = string.Empty;
+            public string Brand { get; set; } = string.Empty;
+            public string Color { get; set; } = string.Empty;
             public int CurrentSpeed { get; set; }
             public string? Model { get; set; }
             public double? Tonnage { get; set; }
@@ -38,8 +39,8 @@ namespace CityDriveManager.Services
 
         private class PoiDto
         {
-            public string Type { get; set; }
-            public string Name { get; set; }
+            public string Type { get; set; } = string.Empty;
+            public string Name { get; set; } = string.Empty;
             public double Latitude { get; set; }
             public double Longitude { get; set; }
             public int? Capacity { get; set; }

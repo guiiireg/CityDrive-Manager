@@ -4,8 +4,9 @@ namespace CityDriveManager.Models
 {
     public abstract class Vehicle
     {
-        public string Brand { get; set; }
-        public string Color { get; set; }
+        public int Id { get; set; }
+        public string Brand { get; set; } = string.Empty;
+        public string Color { get; set; } = string.Empty;
         public int CurrentSpeed { get; set; }
 
         public virtual void Accelerate()

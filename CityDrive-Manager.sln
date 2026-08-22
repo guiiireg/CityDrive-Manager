@@ -4,6 +4,8 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityDriveManager", "CityDriveManager.csproj", "{E581DBA8-407D-C0EC-A932-5C31CCF4B036}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityDriveManager.Tests", "CityDriveManager.Tests\CityDriveManager.Tests.csproj", "{F9A1B2C3-D4E5-4678-9A1B-2C3D4E5F6A7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

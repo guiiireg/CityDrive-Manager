@@ -4,7 +4,8 @@ namespace CityDriveManager.Models
 {
     public class PointOfInterest
     {
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
         public double Latitude { get; set; }
         public double Longitude { get; set; }
 

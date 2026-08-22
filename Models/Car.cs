@@ -2,7 +2,7 @@ namespace CityDriveManager.Models
 {
     public class Car : Vehicle
     {
-        public string Model { get; set; }
+        public string Model { get; set; } = string.Empty;
 
         public override string GetVehicleType() => "Car";
 
