@@ -4,6 +4,8 @@
 
 <h1 align="center">🏙️ City Drive Manager</h1>
 
+> **Note pour les recruteurs / RH :** *City Drive Manager est une application console .NET 10 / C# 13 conçue selon une architecture en couches (Layered Architecture). Elle modélise la mobilité urbaine intelligente (flotte de véhicules hybrides/électriques/thermiques, POIs, calcul de distance par formule de Haversine, simulation de trafic et persistance JSON).*
+
 <p align="center">
   <strong>A smart city console application for managing urban mobility.</strong>
 </p>
@@ -36,10 +38,11 @@
 ## ⚡ Quick Start
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/guiiireg/CityDrive-Manager.git
 cd CityDrive-Manager
 dotnet run --project CityDriveManager.csproj
 ```
+
 
 ---
 
